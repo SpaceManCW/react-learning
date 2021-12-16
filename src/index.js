@@ -1,17 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//导入React文件
+import React from "react";
+import ReactDOM from "react-dom";
+// import Hello from "./component/demo01";
+// import Demo02 from "./component/demo02";
+//import Comment from "./component/demo03";
+//import Demo04 from "./component/demo04";
+// import Demo05 from "./component/demo05";
+// import Demo06 from "./component/demo06";
+import Demo07 from "./component/demo07";
 
+class Home extends React.Component {
+  render() {
+    return (
+      <div>
+        {/* <Hello /> */}
+        {/* <Demo02 /> */}
+        {/* <Comment /> */}
+        {/* {this.props.children} */}
+        {/* <Demo05 /> */}
+        {/* <Demo06 /> */}
+        <Demo07 />
+
+      </div>
+    );
+  }
+}
+// 双标签内有子元素，props就会有children属性
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  // <Home>
+  //   <p>这是对children的测试</p>
+  // </Home>,
+  <Home />,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
