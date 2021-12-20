@@ -7,7 +7,11 @@ import ReactDOM from "react-dom";
 //import Demo04 from "./component/demo04";
 // import Demo05 from "./component/demo05";
 // import Demo06 from "./component/demo06";
-import Demo07 from "./component/demo07";
+// import Demo07 from "./component/demo07";
+// import Demo08 from "./component/demo08";
+// import Demo09 from "./component/demo09";
+import Demo10 from "./component/demo10";
+
 
 class Home extends React.Component {
   render() {
@@ -19,7 +23,9 @@ class Home extends React.Component {
         {/* {this.props.children} */}
         {/* <Demo05 /> */}
         {/* <Demo06 /> */}
-        <Demo07 />
+        {/* <Demo08 /> */}
+        {/* <Demo09 /> */}
+        <Demo10 />
 
       </div>
     );
