@@ -10,8 +10,8 @@ import ReactDOM from "react-dom";
 // import Demo07 from "./component/demo07";
 // import Demo08 from "./component/demo08";
 // import Demo09 from "./component/demo09";
-import Demo10 from "./component/demo10";
-
+//import Demo10 from "./component/demo10";
+import Test from './component/test'
 
 class Home extends React.Component {
   render() {
@@ -25,8 +25,8 @@ class Home extends React.Component {
         {/* <Demo06 /> */}
         {/* <Demo08 /> */}
         {/* <Demo09 /> */}
-        <Demo10 />
-
+        {/* <Demo10 /> */}
+        <Test />
       </div>
     );
   }
