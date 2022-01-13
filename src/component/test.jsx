@@ -1,9 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 import  '../style/test.css'
 const Test = () => {
+    const [show,setshow] = useState(true)
+    const loadDate = () => {
+        return show ? (<div>元素</div>) : null
+    }
+    const fun = () => {
+        setshow(!show)
+    }
     return (
         <div className='box'>
-            新组件
+            条件渲染:{loadDate()}
+            <br />
+            <button onClick={fun}>点击控制显隐</button>
         </div>
     )
 }
