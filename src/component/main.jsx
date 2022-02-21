@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import  '../style/test.css'
-const Test = () => {
+const Main = () => {
     const [show,setshow] = useState(true)
     const loadDate = () => {
         return show ? (<div>元素</div>) : null
@@ -17,4 +17,4 @@ const Test = () => {
     )
 }
 
-export default Test
+export default Main
