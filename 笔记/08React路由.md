@@ -11,7 +11,7 @@
 
 ## 路由基本使用
 - 安装：yarn add react-router-dom
-- 导入路由的四个核心组件：Router/Route/Link/Routes
+- 导入路由的四个核心组件：BrowserRouter as Router/Route/Link/Routes
 - 使用Router标签包裹整个应用
 - 使用Link组件作为导航菜单（路由入口）
 - 使用Route组件配置路由规则和要展示的组件（路由出口）
