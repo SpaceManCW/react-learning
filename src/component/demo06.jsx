@@ -1,6 +1,6 @@
 //这tm就是子组件向父组件传递参数，只不过父组件给子组件传递的函数名叫render罢了。。。。搞这么费劲
 import React from "react";
-import img from "../images/yuan.png";
+// import img from "../images/yuan.png";
 class Demo06 extends React.Component {
   constructor(props) {
     super(props);
@@ -66,34 +66,34 @@ class Demo06 extends React.Component {
   }
 }
 
-class Mouse extends React.Component {
-  constructor(props) {
-    super(props);
-    //鼠标的位置
-    this.state = {
-      x: 0,
-      y: 0,
-    };
-  }
+// class Mouse extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     //鼠标的位置
+//     this.state = {
+//       x: 0,
+//       y: 0,
+//     };
+//   }
 
-  //鼠标移动事件的事件处理程序
-  handleMouseMove = (e) => {
-    this.setState({
-      x: e.clientX,
-      y: e.clientY,
-    });
-  };
-  //监听鼠标的移动事件
-  componentDidMount() {
-    window.addEventListener("mousemove", this.handleMouseMove);
-  }
+//   //鼠标移动事件的事件处理程序
+//   handleMouseMove = (e) => {
+//     this.setState({
+//       x: e.clientX,
+//       y: e.clientY,
+//     });
+//   };
+//   //监听鼠标的移动事件
+//   componentDidMount() {
+//     window.addEventListener("mousemove", this.handleMouseMove);
+//   }
 
-  //解除鼠标移动事件
-  componentWillUnmount() {
-    window.removeEventListener("mousemove", this.handleMouseMove);
-  }
-  render() {
-    return this.props.children(this.state);
-  }
-}
+//   //解除鼠标移动事件
+//   componentWillUnmount() {
+//     window.removeEventListener("mousemove", this.handleMouseMove);
+//   }
+//   render() {
+//     return this.props.children(this.state);
+//   }
+// }
 export default Demo06;
