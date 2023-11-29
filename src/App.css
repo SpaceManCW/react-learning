@@ -1,4 +1,15 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu {
+    width: 350px;
+    height: 100%;
+}
+
 .switch {
     width: 100%;
-    border: 1px solid black;
+    padding: 20px;
+    /* border: 2px solid rgb(0, 217, 255); */
 }
